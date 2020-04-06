@@ -18,7 +18,7 @@ public class ArtistImpl implements ArtistsDao {
     @Override
     public String createImpl(String name, String country) {
         System.out.println("Verificare syntaxa sql --> " + "INSERT INTO artists (id, name, country) VALUES ('" + ++idNumber + "', '"+ name + "', '" + country + "') ");
-        return "INSERT INTO artists (id, name, country) VALUES ('" + ++idNumber + "', '"+ name + "', '" + country + "') ";
+        return "INSERT INTO artists (id, name, country) VALUES ('" + idNumber++ + "', '"+ name + "', '" + country + "') ";
     }
 
     @Override
